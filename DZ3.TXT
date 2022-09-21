@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+int Cal(int a){
+ int c;
+ int b=0;
+   c = a%2;
+   b = a/2;
+   a = b;
+if(a>0){
+    Cal(a);
+    printf("%d",c);
+}
+else if(a=1){
+printf("%d",a);
+}
+
+}
+
+
+int rec (int a,int b)
+{
+
+int i=1 ;
+
+if (b>0)
+{
+
+i = a*rec(a,b-1);
+
+}
+else {
+    printf("%d\n",rec);
+}
+
+printf("%d\n",i);
+return i;
+
+
+}
+
+
+int main()
+{
+  Cal(5);
+printf(" \n" );
+
+
+rec (5,3);
+
+
+
+
+
+    return 0;
+}
+
